@@ -58,6 +58,17 @@ $secondaryFont: "Roboto", Helvetica, Arial, sans-serif;
 }
 
 h1, 
+h2 {
+  font-family: $primaryFont;
+}
+
+p {
+  font-family: $secondaryFont;
+  line-height: 32px;
+  @include fontStyle (20, $primaryColor3, 400);
+}
+
+h1, 
 h2, 
 p, 
 ul, 
@@ -78,6 +89,14 @@ a {
   text-decoration: none;
   display: inline-block;
   color: inherit;
+  border: 1px solid transparent;
+}
+
+a:active,
+a:focus,
+button:active,
+button:focus {
+  border: 1px solid $primaryColor3;
 }
 
 a img {
@@ -104,7 +123,7 @@ fieldset {
 
 button {
   background: none;
-  border: none;
+  border: 1px solid transparent;
 }
 
 .readMoreButton {
@@ -115,7 +134,12 @@ button {
   @include button(40px, 40px);
 }
 
-.submitButton,
- {
+.submitButton {
   @include button(100px, 100px)
+}
+
+.readMoreButton:hover,
+.findOutMoreButton:hover,
+.submitButton:hover {
+  box-shadow: 0 0 10px $secondaryColor2;
 }

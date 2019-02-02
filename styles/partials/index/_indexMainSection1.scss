@@ -4,13 +4,9 @@
   text-align: center;
     h2 {
       @include fontStyle(56.3, $primaryColor3, 600);
-      font-family: $primaryFont;
       letter-spacing: 1.3px;
       padding: 20px;
     } p {
-        @include fontStyle(20, $primaryColor3, 400);
-        font-family: $secondaryFont;
-        line-height: 32px;
         padding-bottom: 20px;
       }
 } 

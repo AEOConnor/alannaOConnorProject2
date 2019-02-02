@@ -1,6 +1,11 @@
 @import 'partials/setup'; 
 @import 'partials/global';
 @import 'partials/nav';
-@import 'partials/indexHeader';
-@import 'partials/indexSection1';
-@import 'partials/indexSection2';
+@import 'partials/index/indexHeader';
+@import 'partials/index/indexMainSection1';
+@import 'partials/index/indexMainSection2';
+@import 'partials/index/indexMainSection3';
+@import 'partials/index/indexMainSection4';
+@import 'partials/index/indexAside';
+@import 'partials/footer';
+@import 'partials/blog/blogHeader';

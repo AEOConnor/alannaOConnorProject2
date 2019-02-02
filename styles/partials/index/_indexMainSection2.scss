@@ -1,0 +1,49 @@
+.mainEvents {
+  background: #fff;
+    .flexContainer {
+      display: flex;
+      justify-content: space-between;
+    }   .flexItem {
+          width: 50%;
+    }
+} 
+
+.mainEvents {
+    h2 {
+      @include fontStyle(32, $primaryColor3, 600);
+    } p {
+        padding: 25px 0;
+    }
+}
+
+.eventsOneCopy {
+  border: 1px solid green;
+  padding: 10% 0 5% 10%;
+}
+
+.eventsTwoCopy {
+  border: 1px solid green;
+  padding: 10% 10% 5% 0;
+  text-align: right;
+}
+
+.eventsOneImg img {
+  position: relative;
+  border: 1px solid blue;
+  left: -20%;
+  top: -10%;
+  box-shadow: 20px 20px 0 -5px $primaryColor1;
+
+}
+
+.eventsTwo {
+  flex-direction: row-reverse;
+}
+
+.eventsTwoImg img {
+  position: relative;
+  border: 1px solid blue;
+  right: -20%;
+  bottom: -25%;
+  box-shadow: -10px 10px 0 5px $primaryColor1;
+}
