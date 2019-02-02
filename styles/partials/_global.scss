@@ -1,0 +1,121 @@
+// Utility styles //
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background:#fff;
+    color: #000;
+}
+
+.skipLink:focus {
+    left: 10px;
+}
+
+.visibilityHidden:not(:focus):not(:active) {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+     white-space: nowrap;
+     clip-path: inset(100%);
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+ }
+
+.wrapper {
+   max-width: 1200px;
+   width: 90%;
+   margin: 0 auto;
+   border: 1px solid pink;
+ }
+
+html {
+  font-size: 125%;
+}
+
+// Styleguide colour variables // 
+$primaryColor1: #f8e71c; 
+$primaryColor2: #0e902d;
+$primaryColor3: #2c2c2c; 
+$secondaryColor1: #074115;
+$secondaryColor2: #4f4f4f;
+$secondaryColor3: #f0efed;
+
+// Styleguide font variables //
+$primaryFont: "Josefin Sans", Verdana, Arial, sans-serif;
+$secondaryFont: "Roboto", Helvetica, Arial, sans-serif;
+
+// Font mixin // 
+@mixin fontStyle($sizeValue, $colorValue, $fontWeight) {
+  font-size: $sizeValue * 1px;
+  font-size: ($sizeValue/20) * 1rem;
+  font-size: $sizeValue;
+  color: $colorValue;
+  font-weight: $fontWeight;
+}
+
+h1, 
+h2, 
+p, 
+ul, 
+figure, 
+form,
+input, 
+button {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+  width: 100%;
+	display: block;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+a img {
+  display: block;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+fieldset {
+  border: none;
+}
+// Button mixin //
+@mixin button($paddingLeft, $paddingRight) {
+  font-family: $primaryFont;
+  color: #fff;
+  padding: 10px $paddingRight 10px $paddingLeft;
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1px;
+  background: $primaryColor2;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.readMoreButton {
+  @include button(20px, 20px);
+}
+
+.findOutMoreButton {
+  @include button(40px, 40px);
+}
+
+.submitButton,
+ {
+  @include button(100px, 100px)
+}
