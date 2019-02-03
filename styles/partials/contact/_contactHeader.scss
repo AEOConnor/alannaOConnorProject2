@@ -1,14 +1,15 @@
-.topBlogHeaderBar {
+.topContactHeaderBar {
   background: darken($primaryColor3, 50%);
 }
 
-.blogHeader {
-  background: url("../assets/blogHeaderOne.jpg") no-repeat;
+.contactHeader {
+  background: url("../assets/contactHeaderOne.jpg") no-repeat;
   background-size: cover;
   min-height: 70vh;
     h1 {
       @include fontStyle(80, $primaryColor1, 600);
       line-height: 92px;
-      margin-top: calc(55vh - 83px);
+      margin-top: calc(40vh - 83px);
+      width: 30%;
     }
 }

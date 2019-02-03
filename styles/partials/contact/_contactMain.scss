@@ -1,0 +1,74 @@
+.contactMain {
+  background: $secondaryColor3;
+  padding-top: 70px;
+}
+
+.contactMainFlexContainer {
+  display: flex;
+  flex-direction: row;
+    .ourContactInfo {
+      width: calc(40% - 40px);
+      margin-right: 40px;
+    } .contactUsForm {
+        width: 60%;
+    }
+}
+
+.socialMediaLinks ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+    li {
+      margin: 5px;
+    } a {
+      padding: 5px 2px;
+      transition: all .4s ease-in-out;
+    }  
+}
+
+.socialMediaLinks ul li:first-child {
+  margin-left: 0;
+}
+
+.socialMediaLinks a:hover {
+  transform: scale(1.4);
+
+}
+.fab {
+  color: $primaryColor2;
+  font-size: 1.2rem;
+}
+
+.contactDetails {
+  color: $primaryColor3;
+  line-height: 30px;
+  font-family: $primaryFont;
+    span {
+      padding: 0 3px;
+    }
+}
+
+.contactDetails a:first-child {
+  display: block;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.contactDetails a:last-child {
+  width: 80%;
+}
+
+.postalCode {
+  display: block;
+}
+.contactUsForm {
+  background: #fff;
+  position: relative;
+  top: -300px;
+  box-shadow: -25px 25px 0 -6px $primaryColor1;
+    .formInput,
+    textarea {
+      background: #fff;
+    }
+}
+

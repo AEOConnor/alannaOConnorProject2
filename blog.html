@@ -7,36 +7,106 @@
   <title>Blog | Planned Invitation</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
     crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700|Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700|Roboto:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
  <!-- Skip link -->
   <a href="#mainContentBlog" class="skipLink">Skip to main content</a>
   <!-- Header begins -->
-  <header class="blogHeader">
-    <!-- <div class="topHeaderBar"> -->
-    <div class="wrapper topHeaderBar">
-      <p class="logo">Planted</p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <header>
+    <div class="topBlogHeaderBar">
+      <div class="wrapper topHeaderBar">
+        <p class="logo">Planted</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <h1>Blog</h1>
+    <div class="blogHeader">
+      <div class="wrapper">
+        <h1>Blog</h1>
+      </div>
+    </div>
   </header>
-  <aside>
-    <div>
-      <img src="assets/sideBarImage.jpg" alt="Gracefully aged hertiage building wall with a wood framed window">
-      <div class="asideCopy">
-        <div>
-          <h2>About Planted</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa exercitationem quasi perferendis! <a href="#aboutPlanted">Find out more.</a></p>
+  <main id="mainContentBlog" class="blogMainFlexContainer">
+    <div class="blogContainer">
+      <div class="blogImg">
+        <img src="assets/postImage.jpg" alt="Green leaves of a healthy plant.">
+      </div>
+      <section class="blogContent">
+        <div class="blogCopy">
+          <h2>Our mission at Planted</h2>
+          <p><span class="emphasis">Monday January 21th, 2019 by</span> <span class="bold">Youstra</span></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia expedita dolorem fuga beatae ex quod
+            aspernatur vero, omnis corporis neque, magni quam quibusdam sapiente? Modi dolor voluptatibus iste ratione!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illum maxime adipisci exercitationem nemo incidunt
+            consequatur minus id! Dolores perferendis nostrum natus voluptas vel officiis, iste optio odit officia. Nesciunt
+            minima explicabo molestias eveniet cumque praesentium perspiciatis nulla soluta consequatur?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam labore, sit pariatur enim reprehenderit animi
+            distinctio ipsam perferendis illum deserunt fugiat maiores veniam nisi molestiae dignissimos quibusdam nesciunt
+            sapiente doloribus culpa corporis dicta. Quaerat, maiores. Veniam in, quae, eum, alias debitis iusto voluptatem
+            quibusdam repellat non pariatur dignissimos magni ad laborum odio quas fugit. Dolor numquam qui dignissimos
+            quibusdam
+            praesentium autem nihil sapiente minus aperiam, laboriosam alias. Sit, vero quas! Repudiandae quia dolor
+            repellendus
+            labore ea distinctio voluptas voluptate excepturi?</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat earum ut laboriosam maiores, repudiandae
+            accusamus
+            odio cum quia nulla blanditiis, libero eaque, vel qui voluptatum labore rem et natus quisquam.</p>
         </div>
+      </section>
+      <section class="blogComments">
+        <h2>Comments:</h2>
+        <div class="blogCommentOne">
+          <div class="blogCommentImg">
+            <img src="assets/profileImage.jpg" alt="Blog commenter, Jeremy">
+          </div>
+          <div class="blogCommentCopy">
+            <h3>Tuesday October 9th, 2018 by Jeremy</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quas ipsum tempora facilis, incidunt fuga eius
+              dolor, voluptatum, placeat earum laudantium dolorum eum harum aut saepe aspernatur? Eaque, saepe cum!</p>
+          </div>
+        </div>
+        <div class="blogCommentTwo">
+          <div class="blogCommentImg">
+            <img src="assets/profileImageTwo.jpg" alt="Blog commenter, Julia">
+          </div>
+          <div class="blogCommentCopy">
+            <h3>Wednesday October 10th, 2018 by Julia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio aperiam quisquam iste? Veritatis dolore
+              expedita dicta voluptatum obcaecati provident, neque praesentium?</p>
+          </div>
+        </div>
+      </section>
+      <section class="blogCommentsForm">
+        <form action="#" method="POST" class="commentForm">
+          <fieldset>
+            <legend class="visibilityHidden">Submit a comment about our blog post</legend>
+            <label for="name" class="visibilityHidden">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" class="formInput" required>
+            <label for="email" class="visibilityHidden">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Email address" class="formInput" required>
+            <label for="comment" class="visibilityHidden">Comment</label>
+            <textarea name="comment" id="comment" cols="25" rows="7" placeholder="Comment" maxlength="500" required"></textarea>
+            <button type="submit" class="submitButton">Post Comment</button>
+          </fieldset>
+        </form>
+      </section>
+    </div>
+    <aside>
+      <div class="asideImg">
+        <img src="assets/sideBarImage.jpg" alt="Gracefully aged hertiage building wall with a wood framed window">
+      </div>
+      <div class="asideCopy">
+        <h2>About Planted</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa exercitationem quasi perferendis! <a href="#aboutPlanted">Find
+                out more.</a></p>
         <div>
           <h3>Recent Posts</h3>
           <ul>
@@ -44,70 +114,12 @@
             <li><a href="#">Lorem ipsum dolor sit.</a></li>
             <li><a href="#">Lorem ipsum dolor sit.</a></li>
             <li><a href="#">Lorem ipsum dolor sit.</a></li>
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
-  </aside>
-  <main id="mainContentBlog">
-    <section class="blogContent">
-      <div class="blogImg">
-        <img src="assets/postImage.jpg" alt="Green leaves of a healthy plant.">
-      </div>
-      <div class="blogCopy">
-        <h2>Our mission at Planted</h2>
-        <p><span class="emphasis">Monday January 21th, 2019 by</span> <span class="bold">Youstra</span></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia expedita dolorem fuga beatae ex quod
-          aspernatur vero, omnis corporis neque, magni quam quibusdam sapiente? Modi dolor voluptatibus iste ratione!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illum maxime adipisci exercitationem nemo incidunt
-          consequatur minus id! Dolores perferendis nostrum natus voluptas vel officiis, iste optio odit officia. Nesciunt
-          minima explicabo molestias eveniet cumque praesentium perspiciatis nulla soluta consequatur?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam labore, sit pariatur enim reprehenderit animi
-          distinctio ipsam perferendis illum deserunt fugiat maiores veniam nisi molestiae dignissimos quibusdam nesciunt
-          sapiente doloribus culpa corporis dicta. Quaerat, maiores. Veniam in, quae, eum, alias debitis iusto voluptatem
-          quibusdam repellat non pariatur dignissimos magni ad laborum odio quas fugit. Dolor numquam qui dignissimos quibusdam
-          praesentium autem nihil sapiente minus aperiam, laboriosam alias. Sit, vero quas! Repudiandae quia dolor repellendus
-          labore ea distinctio voluptas voluptate excepturi?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat earum ut laboriosam maiores, repudiandae accusamus
-          odio cum quia nulla blanditiis, libero eaque, vel qui voluptatum labore rem et natus quisquam.</p>
-      </div>
-    </section>
-    <section class="blogComments">
-      <h2>Comments:</h2>
-      <div class="blogCommentOne">
-        <div class="blogCommentImg">
-          <img src="assets/profileImage.jpg" alt="Blog commenter, Jeremy">
-        </div>
-        <div class="blogCommentCopy">
-          <h3>Tuesday October 9th, 2018 by Jeremy</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quas ipsum tempora facilis, incidunt fuga eius dolor, voluptatum, placeat earum laudantium dolorum eum harum aut saepe aspernatur? Eaque, saepe cum!</p>
-        </div>
-      </div>
-      <div class="blogCommentTwo">
-        <div class="blogCommentImg">
-          <img src="assets/profileImageTwo.jpg" alt="Blog commenter, Julia">
-        </div>
-        <div class="blogCommentCopy">
-          <h3>Wednesday October 10th, 2018 by Julia</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio aperiam quisquam iste? Veritatis dolore expedita dicta voluptatum obcaecati provident, neque praesentium?</p>
-        </div>
-      </div>
-    </section>
-    <section class="blogCommentsForm">
-      <form action="#" method="POST" class="commentForm">
-        <fieldset>
-          <legend class="visuallyHidden">Submit a comment about our blog post</legend>
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" placeholder="Name" class="formInput">
-          <label for="email">Email Address</label>
-          <input type="email" name="email" id="email" placeholder="email" class="formInput">
-          <label for="comment">Comment</label>
-          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment" class="formInput"></textarea>
-          <button type="submit" class="submitButton">Post Comment</button>
-        </fieldset>
-      </form>
-    </section>
-  </main>
+      
+    </aside>
+  </main>    
   <footer>
     <p>Copyright &copy; 2019 HackerYou</p>
   </footer>

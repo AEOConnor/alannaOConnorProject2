@@ -1,0 +1,41 @@
+aside {
+  color: $primaryColor3;
+}
+
+.asideImg img {
+  box-shadow: 40px 40px 0 -13px #fff;
+}
+
+.asideCopy {
+  background: #fff;
+  padding: 30px 45px;
+  width: 481px;
+    p a {
+      color: $primaryColor2;
+      font-style: italic;
+      transition: all 1s ease;
+      border: 1px solid transparent;
+    } 
+} 
+
+.asideCopy p > a:hover {
+  color: $primaryColor3;
+  border-bottom: 1px solid $primaryColor3;
+}
+
+.asideCopy a:focus,
+.asideCopy a:active {
+  border: 1px solid $primaryColor3;
+}
+
+.asideCopy ul li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.asideCopy ul li::before {
+  content: "•";
+  color: $primaryColor2;
+  position: absolute;
+  left: 0;
+}

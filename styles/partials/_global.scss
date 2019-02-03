@@ -135,7 +135,8 @@ button {
 }
 
 .submitButton {
-  @include button(100px, 100px)
+  @include button(100px, 100px);
+  width: 100%;
 }
 
 .readMoreButton:hover,
