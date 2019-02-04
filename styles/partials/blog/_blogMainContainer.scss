@@ -16,10 +16,10 @@
 }
 
 .blogContent{
-  border-left: 10px solid $primaryColor1;
-  border-bottom: 10px solid $primaryColor1;
+  box-shadow: -20px 20px 0 -5px $primaryColor1;
   padding: 60px 45px 35px 45px;
   margin: 0 90px 40px 0;
+
 }
 
 .blogContent::before {
@@ -111,4 +111,14 @@ textarea {
   background: $secondaryColor3;
   resize: none;
   margin-bottom: 30px;
+}
+
+input:focus, 
+textarea:focus{
+  background: #fff;
+}
+
+input:active,
+textarea:active {
+  border: 1px solid $primaryColor3;
 }

@@ -1,12 +1,13 @@
 
 .asideImg img {
-  box-shadow: 30px 15px 0 -15px #fff;
+  box-shadow: 30px 16px 0 -15px #fff;
 }
 
 .asideCopy {
   background: #fff;
   padding: 30px;
   margin-left: 35%;
+  box-shadow: 15px 0px 0 0px #fff;
     p a {
       color: $secondaryColor1;
       font-style: italic;
@@ -29,6 +30,12 @@
 .asideCopy ul li {
   position: relative;
   padding-left: 20px;
+    a {
+      transition: all 1s ease;
+    }
+    a:hover {
+      color: $primaryColor2;
+    }
 }
 
 .asideCopy ul li::before {

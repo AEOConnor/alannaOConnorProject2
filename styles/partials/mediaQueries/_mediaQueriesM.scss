@@ -31,8 +31,9 @@
   }
 
   //blog//
-  .blogImg {
-    right: -17px;
+
+  .blogContent {
+    padding-top: 130px;
   }
 
   .blogComments {
@@ -90,29 +91,59 @@
     padding-top: 15%;
   }
 
-  label .fas {
+  .topHeaderBar {
+    flex-direction: row-reverse;
+  }
+
+
+  
+  .topHeaderBar label  {
+    z-index: 1000;
+  }
+
+  label svg  {
     display: block;
-    align-self: end;
   }
 
   .logo {
     display: none;
   }
 
-  .topHeaderBar ul {
+  .topHeaderBar nav ul {
     display: none;
   }
 
   #responsiveNav:checked ~ nav ul {
     display: block;
     flex-direction: column;
-    background: $primaryColor3;
+    background: transparentize($color: $primaryColor3, $amount: .4);
     top: 0;
-    left: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     position: absolute;
     z-index: 30;
     text-align: center;
-    padding-top: 2%;
+    padding-top: 10%;
+    position: fixed;
+  }
+
+
+  #responsiveNav:checked ~ label > svg g:nth-of-type(2)  {
+    opacity: 0;
+  }
+
+  #responsiveNav:checked ~ label > svg g:nth-of-type(1) {
+    transform: rotate(45deg) translate(100px, -155px);
+
+  }
+
+  #responsiveNav:checked ~ label > svg g:nth-of-type(3) {
+    transform: rotate(-45deg) translate(-280px, 10px);
+  }
+
+  #responsiveNav:checked  ~ .mainHeader {
+    padding-top: 120px;
   }
 
   .mainOverview,
@@ -138,6 +169,7 @@
         font-weight: 400;
       }
   }
+
   .learnMoreBox p {
     display: none;
   }
@@ -155,10 +187,20 @@
   }
 
   //blog//
-  .blogImg {
-    top: -220px;
-  }  
 
+  .blogContent {
+    padding-top: 60px;
+  }
+
+  .asideImg {
+    display: none;
+  }
+
+  aside .asideCopy {
+    width: 100%;
+    box-shadow: none;
+    padding: 50px;
+  }
   .blogCommentsForm {
     padding: 0 0 20px 0;
   }
@@ -176,13 +218,50 @@
     font-size: 1rem;
   }
 
-  //blog//
-
-  .blogImg {
-    width: 85%;
-  }
-  
+  //blog//  
   .blogMainFlexContainer aside {
    display: none;
+  }
+
+  .blogImg {
+    top: -240px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  //main// {
+    .mainLearnMoreContent {
+      flex-direction: column;
+      align-content: center;
+        .learnMoreBox {
+          width: 100%;
+        }
+    }
+
+    .mainLearnMoreContent a
+
+  //blog//
+  .blogContent {
+    padding-top: 15px;
+    margin-right: 0;
+  }
+
+  .blogComments {
+    padding: 10px;
+      h3 {
+        font-size: 1rem;
+      } p {
+        font-size: .9rem;
+      }
+  }
+
+  //contact//
+  .contactMainFlexContainer .ourContactInfo {
+    flex-direction: column;
+    align-items: center;
+      .socialMediaLinks {
+        padding: 0;
+      }
   }
 }

@@ -76,3 +76,8 @@
     }
 }
 
+.contactUsForm input:focus,
+.contactUsForm textarea:focus {
+  background: $secondaryColor3;
+}
+
