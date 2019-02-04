@@ -1,0 +1,210 @@
+//Media queries for large screens//
+
+@media (max-width: 2560px) {
+  //index//
+  .responsiveXL {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1440px) {
+
+  //index//
+  .responsiveXL {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1300px) {
+  // index//
+
+  .headerBox {
+    bottom: -7%;
+  }
+  .mainOverview {
+    padding: 150px 0;
+  }
+  // blog//
+  .blogContent {
+    padding-top: 20px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  
+  //index//
+  .headerBox {
+    bottom: -3%;
+  }
+  .eventsOneCopy {
+    padding-left: 6%;
+  }
+
+  .eventsTwoCopy {
+    padding-right: 6%;
+  }
+
+  .mainEvents p {
+    padding-top: 20px;
+  }
+
+  //blog//
+  .blogContent {
+    padding-top: 60px;
+  }
+
+  .blogImg {
+    top: -310px;
+  }
+
+}
+
+@media (max-width: 1100px) {
+  //blog//
+  .blogContent {
+    padding-top: 20px;
+  }
+
+  .blogContent::before {
+    height: 120px;
+  }
+  
+  .asideCopy {
+    margin-left: 12%;
+  }
+}
+
+@media (max-width: 1000px) {
+  //index//
+
+  .mainHeader h1 {
+    width: 70%;
+  }
+
+  .headerBox {
+    width: 50%;
+    bottom: 0;
+  }
+
+  .eventsOneImg img {
+    top: 5%;
+  }
+
+  .eventsTwoImg img {
+    bottom: -13%;
+  }
+
+  .sectionBanner {
+    background-position: 55%;
+  }
+
+  //blog// 
+  .blogContent,
+  .blogComments,
+  .blogCommentsForm {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  //blog// 
+  .blogContent::before {
+    height: 80px;
+  }
+
+  .blogComments,
+  .blogCommentsForm {
+    padding: 0;
+  }
+
+  .asideCopy {
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 800px) {
+  //index//
+  .mainHeader h1 {
+    font-size: 7.3rem;
+  }
+
+  .headerBox {
+    display: none;
+  }
+
+  .mainOverview {
+    padding: 100px 0;
+  }
+
+  .eventsOneCopy {
+    padding-right: 2%;
+  }
+
+  .eventsTwoCopy {
+    padding-left: 2%;
+    text-align: left
+  }
+
+  .learnMoreBox h2 {
+    font-size: 1.6rem;
+  }
+
+  //blog//
+
+  .blogMainFlexContainer {
+    flex-direction: column;
+    .blogContainer {
+       width: 90%;
+      margin: 0 auto;
+    } aside {
+        width: 100%;
+    }
+  }
+
+  .blogImg {
+    width: 70%;
+    top: -285px;
+  }
+
+  .blogComments,
+  .blogCommentsForm {
+    padding: 35px;
+    margin: 0;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: row;
+      .asideImg, .asideCopy {
+        width: 50%;
+      }
+  }
+
+  .asideCopy {
+    padding: 20px;
+  }
+
+  //contact//
+  .contactHeader h1 {
+    font-size: 3.6rem;
+  }
+
+  .contactMain {
+    padding-top: 50px;
+  }
+
+  .contactDetails a:last-child {
+    width: 100%;
+  }
+
+  .contactMainFlexContainer .contactUsForm {
+    width: 90%;
+    top: -400px;
+    right: -35px;
+  }
+}

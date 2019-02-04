@@ -1,0 +1,188 @@
+@media (max-width: 750px) {
+  //index//
+  .mainHeader h1 {
+    font-size: 6.3rem;
+    line-height: 105px;
+  }
+
+  .mainEvents h2,
+  .learnMoreBox h2 {
+    font-size: 1.3rem;
+  } 
+
+  .mainLearnMore {
+    padding: 80px 0;
+  }
+
+  .mainAboutContent {
+    flex-direction: column;
+  }
+
+  .mainAboutImg {
+    width: 50%;
+    padding-bottom: 60px;
+    margin: 0 auto;
+  }
+
+  .mainAboutCopy {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  //blog//
+  .blogImg {
+    right: -17px;
+  }
+
+  .blogComments {
+    padding-bottom: 0;
+  }
+
+  .asideCopy h2 {
+    font-size: 1.3rem;
+  }
+
+  .asideCopy ul li:nth-child(3),
+  .asideCopy ul li:last-child {
+    display: none;
+  }
+
+  //contact//
+  .contactHeader h1 {
+    width: 100%;
+  }
+
+  .contactMain {
+    padding: 50px 0;
+  }
+
+  .contactMainFlexContainer {
+    flex-direction: column-reverse;
+  }
+
+  .contactMainFlexContainer .ourContactInfo {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0;
+    margin: 0;
+    width: 100%;
+      .socialMediaLinks {
+        padding-right: 100px;
+      } 
+  }
+
+  .contactMainFlexContainer .ourContactInfo .contactDetails {
+    width: 100%;
+  }
+
+  .contactMainFlexContainer .contactUsForm {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  //main//
+  .mainHeader h1 {
+    font-size: 5.3rem;
+    line-height: 95px;
+    padding-top: 15%;
+  }
+
+  label .fas {
+    display: block;
+    align-self: end;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .topHeaderBar ul {
+    display: none;
+  }
+
+  #responsiveNav:checked ~ nav ul {
+    display: block;
+    flex-direction: column;
+    background: $primaryColor3;
+    top: 0;
+    left: 100px;
+    position: absolute;
+    z-index: 30;
+    text-align: center;
+    padding-top: 2%;
+  }
+
+  .mainOverview,
+  .instagramGallery {
+    padding: 60px 0;
+  }
+
+  .mainEvents .flexContainer {
+    display: block;
+  }
+
+  .mainEvents .flexItem {
+    max-width: 100%;
+    padding: 5%;
+    text-align: center;
+  }
+
+  .mainLearnMore {
+    padding: 20px;
+    background: $primaryColor3;
+      h2 {
+        color: #fff;
+        font-weight: 400;
+      }
+  }
+  .learnMoreBox p {
+    display: none;
+  }
+
+  .sectionBanner {
+    display: none;
+  }
+
+  .instagramGallery ul li {
+    width: 50%;
+  }
+
+  .instagramGallery ul li:last-child {
+    display: none;
+  }
+
+  //blog//
+  .blogImg {
+    top: -220px;
+  }  
+
+  .blogCommentsForm {
+    padding: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 550px) {
+  //main//
+  .mainHeader h1 {
+    font-size: 4.3rem;
+    line-height: 70px;
+    padding-top: 140px;
+  }
+
+  .mainLearnMore h2 {
+    font-size: 1rem;
+  }
+
+  //blog//
+
+  .blogImg {
+    width: 85%;
+  }
+  
+  .blogMainFlexContainer aside {
+   display: none;
+  }
+}

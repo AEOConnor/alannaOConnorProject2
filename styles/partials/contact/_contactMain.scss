@@ -1,6 +1,6 @@
 .contactMain {
   background: $secondaryColor3;
-  padding-top: 70px;
+  padding-top: 135px;
 }
 
 .contactMainFlexContainer {
@@ -52,19 +52,23 @@
   display: block;
   font-weight: 600;
   padding-bottom: 10px;
+  font-family: $primaryFont;
 }
 
 .contactDetails a:last-child {
   width: 80%;
 }
 
+.contactDetails a {
+  font-family: $secondaryFont;
+}
 .postalCode {
   display: block;
 }
 .contactUsForm {
   background: #fff;
   position: relative;
-  top: -300px;
+  top: -450px;
   box-shadow: -25px 25px 0 -6px $primaryColor1;
     .formInput,
     textarea {

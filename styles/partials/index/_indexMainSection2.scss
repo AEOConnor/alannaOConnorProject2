@@ -4,7 +4,7 @@
       display: flex;
       justify-content: space-between;
     }   .flexItem {
-          width: 50%;
+          max-width: 50%;
     }
 } 
 
@@ -17,23 +17,20 @@
 }
 
 .eventsOneCopy {
-  border: 1px solid green;
-  padding: 10% 0 5% 10%;
+  // border: 1px solid green;
+  padding: 5% 5% 2% 4%;
 }
 
 .eventsTwoCopy {
-  border: 1px solid green;
-  padding: 10% 10% 5% 0;
+  // border: 1px solid green;
+  padding: 5% 4% 2% 5%;
   text-align: right;
 }
 
 .eventsOneImg img {
   position: relative;
-  border: 1px solid blue;
-  left: -20%;
-  top: -10%;
+  top: -15%;
   box-shadow: 20px 20px 0 -5px $primaryColor1;
-
 }
 
 .eventsTwo {
@@ -42,8 +39,6 @@
 
 .eventsTwoImg img {
   position: relative;
-  border: 1px solid blue;
-  right: -20%;
-  bottom: -25%;
-  box-shadow: -10px 10px 0 5px $primaryColor1;
+  bottom: -15%;
+  box-shadow: -20px 20px 0 -5px $primaryColor1;
 }

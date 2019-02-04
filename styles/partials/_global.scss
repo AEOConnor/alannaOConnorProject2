@@ -29,7 +29,7 @@
    max-width: 1200px;
    width: 90%;
    margin: 0 auto;
-   border: 1px solid pink;
+  //  border: 1px solid pink;
  }
 
 html {
@@ -119,6 +119,7 @@ fieldset {
   line-height: 32px;
   letter-spacing: 1px;
   background: $primaryColor2;
+  transition: all .3s ease;
 }
 
 button {
@@ -142,5 +143,5 @@ button {
 .readMoreButton:hover,
 .findOutMoreButton:hover,
 .submitButton:hover {
-  box-shadow: 0 0 10px $secondaryColor2;
+  background: $secondaryColor1;
 }

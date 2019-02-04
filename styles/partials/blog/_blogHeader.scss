@@ -9,6 +9,6 @@
     h1 {
       @include fontStyle(80, $primaryColor1, 600);
       line-height: 92px;
-      margin-top: calc(55vh - 83px);
+      padding-top: calc(55vh - 83px);
     }
 }

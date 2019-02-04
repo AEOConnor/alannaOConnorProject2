@@ -13,14 +13,14 @@
     .learnMoreBox {
       width: 50%;
       padding: 20px 0;
-      border: 1px solid yellow;
+      // border: 1px solid yellow;
     }   a {
-          border: 1px solid green;
+          // border: 1px solid green;
           display: flex;
     }
 }
 
-.fas {
+.learnMoreBox .fas {
   width: 40px;
   height: 40px;
   margin-right: 20px;
