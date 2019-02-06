@@ -15,7 +15,7 @@
 .topHeaderBar a {
   padding: 10px 20px;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: .9rem;
     &:hover {
       color: $primaryColor1;
     } &:active, &:focus {
@@ -24,7 +24,7 @@
 } 
 
 .logo {
-  @include fontStyle(30, #fff, 400);
+  @include fontStyle(35, #fff, 400);
   font-family: $primaryFont;
   padding-right: 20px;
 }

@@ -131,6 +131,9 @@
     text-align: center;
     padding-top: 10%;
     position: fixed;
+      a {
+        font-size: 1.2rem;
+      }
   }
 
   #responsiveNav:focus ~ label svg {
