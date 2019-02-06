@@ -29,14 +29,17 @@
   text-align: right;
 }
 
-.eventsOneImg img {
+.eventsOneImg img,
+.eventsTwoImg img {
   position: relative;
+}
+
+.eventsOneImg img {
   top: -15%;
   box-shadow: 20px 20px 0 -5px $primaryColor1;
 }
 
 .eventsTwoImg img {
-  position: relative;
   bottom: -15%;
   box-shadow: -20px 20px 0 -5px $primaryColor1;
 }

@@ -44,7 +44,6 @@
 }
 
 // Blog Comments Section Starts//
-
 .blogComments {
   padding: 0 45px;
   margin-bottom: 30px;
@@ -90,7 +89,6 @@
 }
 
 // Form styles//
-
 .blogCommentsForm {
   margin-right: 90px;
   font-family: $primaryFont;
@@ -130,7 +128,7 @@ textarea:focus{
 }
 
 input:focus-within,
-textarea:focus-within
+textarea:focus-within,
 form:focus-within {
   border: 1px solid $primaryColor2;
 }

@@ -367,11 +367,11 @@ svg g {
   z-index: 10;
   position: absolute;
   right: 0;
-  bottom: -12%; }
+  bottom: -10%; }
 
 .mainOverview {
   background: #f0efed;
-  padding: 200px 0;
+  padding: 180px 0;
   text-align: center; }
   .mainOverview h2 {
     font-size: 56.3px;
@@ -417,14 +417,16 @@ svg g {
   padding: 5% 4% 2% 5%;
   text-align: right; }
 
+.eventsOneImg img,
+.eventsTwoImg img {
+  position: relative; }
+
 .eventsOneImg img {
-  position: relative;
   top: -15%;
   -webkit-box-shadow: 20px 20px 0 -5px #f8e71c;
   box-shadow: 20px 20px 0 -5px #f8e71c; }
 
 .eventsTwoImg img {
-  position: relative;
   bottom: -15%;
   -webkit-box-shadow: -20px 20px 0 -5px #f8e71c;
   box-shadow: -20px 20px 0 -5px #f8e71c; }
@@ -705,7 +707,7 @@ textarea:focus {
   background: #fff; }
 
 input:focus-within,
-textarea:focus-within
+textarea:focus-within,
 form:focus-within {
   border: 1px solid #0e902d; }
 
@@ -855,7 +857,8 @@ textarea:active {
   box-shadow: -25px 25px 0 -6px #f8e71c; }
   .contactUsForm .formInput,
   .contactUsForm textarea {
-    background: #fff; }
+    background: #fff;
+    font-family: "Josefin Sans", Verdana, Arial, sans-serif; }
 
 .contactUsForm input:focus,
 .contactUsForm textarea:focus {
@@ -993,6 +996,13 @@ textarea:active {
   .mainEvents h2,
   .learnMoreBox h2 {
     font-size: 1.3rem; }
+  .mainEvents .eventsOne,
+  .mainEvents .eventsTwo {
+    display: block; }
+  .mainEvents .eventsHalf {
+    max-width: 100%;
+    padding: 5%;
+    text-align: center; }
   .mainLearnMore {
     padding: 80px 0; }
   .mainAboutContent {
@@ -1100,13 +1110,6 @@ textarea:active {
   .mainOverview,
   .instagramGallery {
     padding: 60px 0; }
-  .mainEvents .eventsOne,
-  .mainEvents .eventsTwo {
-    display: block; }
-  .mainEvents .eventsHalf {
-    max-width: 100%;
-    padding: 5%;
-    text-align: center; }
   .mainLearnMore {
     padding: 20px; }
   .mainLearnMoreContent {

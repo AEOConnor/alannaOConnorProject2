@@ -6,23 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Blog | Planned Invitation</title>
   <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon"/>
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="assets/favicon/android-chrome-192x192.png" sizes="192x192">
-  <meta name="msapplication-square70x70logo" content="assets/favicon/smalltile.png"/>
-  <meta name="msapplication-square150x150logo" content="assets/favicon/mediumtile.png"/>
-  <meta name="msapplication-wide310x150logo" content="assets/favicon/widetile.png"/>
-  <meta name="msapplication-square310x310logo" content="assets/favicon/largetile.png"/>
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/appleTouchIcon57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/appleTouchIcon60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/appleTouchIcon72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/appleTouchIcon76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/appleTouchIcon114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/appleTouchIcon120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/appleTouchIcon144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/appleTouchIcon152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/appleTouchIcon180x180.png">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="assets/favicon/androidChrome192x192.png" sizes="192x192">
+  <meta name="msapplication-square70x70logo" content="assets/favicon/smallTile.png"/>
+  <meta name="msapplication-square150x150logo" content="assets/favicon/mediumTile.png"/>
+  <meta name="msapplication-wide310x150logo" content="assets/favicon/wideTile.png"/>
+  <meta name="msapplication-square310x310logo" content="assets/favicon/largeTile.png"/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700|Roboto:300,400,700" rel="stylesheet">
@@ -31,13 +31,13 @@
 <body>
  <!-- Skip link -->
   <a href="#mainContentBlog" class="skipLink">Skip to main content</a>
-  <!-- Header begins -->
+  <!-- Blog header. Header begins -->
   <header>
     <div class="topBlogHeaderBar">
       <div class="wrapper topHeaderBar">
         <input type="checkbox" id="responsiveNav" name="responsiveNav">
         <label for="responsiveNav" aria-label="Menu navigation">
-          <!-- SVG Code from Asaf Gerchak, thank you! -->
+          <!-- SVG code based on Asaf Gerchak's cool CodePen, thank you! -->
           <svg class="hamburger" id="hamburger" viewBox="0 0 512 512" enable-background="new 0 0 512 512">
             <g>
               <rect x="96" y="152" width="350" height="25" />
@@ -67,7 +67,10 @@
       </div>
     </div>
   </header>
+  <!-- Header ends -->
+  <!-- Main begins -->
   <main id="mainContentBlog" class="blogMainFlexContainer">
+    <!-- Blog main container. Article tag used to contain all blog specific items (content, comments, and comments form). Specific content separated into sections. -->
     <article class="blogContainer">
       <div class="blogImg">
         <img src="assets/postImage.jpg" alt="Green leaves of a healthy plant.">
@@ -120,7 +123,7 @@
         </form>
       </section>
     </article>
-    <!-- Used an aside tag as it's related to the article content but secondary to it. -->
+    <!-- Blog aside. Used an aside tag as it's related to the article content but secondary to it. -->
     <aside>
       <div class="asideImg">
         <img src="assets/sideBarImage.jpg" alt="Gracefully aged hertiage building wall with a wood framed window">
@@ -138,8 +141,11 @@
       </div>
     </aside>
   </main>    
+  <!-- Main ends -->
+  <!-- Footer begins -->
   <footer>
     <p>Copyright &copy; 2019 HackerYou</p>
   </footer>
+  <!-- Footer ends -->
 </body>
 </html>
