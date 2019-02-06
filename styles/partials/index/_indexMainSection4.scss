@@ -3,11 +3,13 @@
   height: 60vh;
   background-size: cover;
   width: 100%;
+  background-position: center center;
 }
 
 .mainAbout {
   background: $secondaryColor3;
 }
+
 .mainAboutContent {
   padding: 70px 0;
   display: flex;

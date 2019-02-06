@@ -12,11 +12,9 @@
   flex-wrap: wrap;
     .learnMoreBox {
       width: 50%;
-      padding: 20px 0;
-      // border: 1px solid yellow;
-    }   a {
-          // border: 1px solid green;
-          display: flex;
+    }  a {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -25,7 +23,7 @@
   height: 40px;
   margin-right: 20px;
   position: relative;
-  background: yellow;
+  background: #primaryColor1;
   border-radius: 50%;
   padding: 8px;
 }
@@ -33,7 +31,6 @@
 .learnMoreBox .fa-file {
  padding: 8px 14px;
 }
-
 
 .learnMoreBox p {
   margin-left: 60px;

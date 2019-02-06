@@ -1,7 +1,10 @@
+main {
+  background: $secondaryColor3;
+}
+
 .blogMainFlexContainer {
   display: flex;
   flex-direction: row-reverse;
-  background: $secondaryColor3;
   padding: 135px 0 40px 0;
   color: $primaryColor3;
     .blogContainer {
@@ -16,12 +19,13 @@
 }
 
 .blogContent{
-  box-shadow: -20px 20px 0 -5px $primaryColor1;
   padding: 60px 45px 35px 45px;
   margin: 0 90px 40px 0;
-
+  box-shadow: -19px 19px 0 -10px $secondaryColor3, -25px 25px 0 -10px $primaryColor1;
+// box shadow code idea supported by Morgan L!//
 }
 
+// To help push the img away from the content//
 .blogContent::before {
   content: '';
   display: block;
@@ -53,6 +57,12 @@
 
 .blogCopy h2 + p {
   padding-bottom: 25px;
+  color: $secondaryColor1;
+    .bold {
+      font-weight: 600;
+    } .emphasis {
+        font-style: italic;
+    }
 } 
 
 .blogCopy p {
@@ -62,6 +72,7 @@
 .blogCommentOne,
 .blogCommentTwo {
   display: flex;
+  flex-direction: row;
   padding: 20px 0;
     h3 {
       margin: 0;
@@ -116,6 +127,12 @@ textarea {
 input:focus, 
 textarea:focus{
   background: #fff;
+}
+
+input:focus-within,
+textarea:focus-within
+form:focus-within {
+  border: 1px solid $primaryColor2;
 }
 
 input:active,

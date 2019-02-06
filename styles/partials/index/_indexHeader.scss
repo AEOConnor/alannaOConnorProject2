@@ -3,24 +3,23 @@
   background-size: cover;
   min-height: 100vh;
   position: relative;
+  background-position: center center;
 }
 
 .mainHeader {
-  // border: 1px solid yellow;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 100px;
     h1 {
-      // border: 1px solid green;
       @include fontStyle(166, #fff, 400);
       font-family: $primaryFont;
       width: 45%;
       z-index: 20;
       padding-top: 8%;
       line-height: 135px;
-    }   .logoInvitation {
+    } .logoInvitation {
         color: $primaryColor1;
       }
 }
@@ -31,5 +30,4 @@
   position: absolute;
   right: 0;
   bottom: -12%;
-  // border: 1px solid white;
 }

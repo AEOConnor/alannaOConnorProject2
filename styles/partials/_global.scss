@@ -1,4 +1,6 @@
 // Utility styles //
+
+// Skip link and visibility hidden code snippets from HackerYou//
 .skipLink {
     position: absolute;
     left: -1000px;
@@ -23,14 +25,13 @@
      clip-path: inset(100%);
      clip: rect(0 0 0 0);
      overflow: hidden;
- }
+}
 
 .wrapper {
    max-width: 1200px;
    width: 90%;
    margin: 0 auto;
-  //  border: 1px solid pink;
- }
+}
 
 html {
   font-size: 125%;
@@ -58,7 +59,8 @@ $secondaryFont: "Roboto", Helvetica, Arial, sans-serif;
 }
 
 h1, 
-h2 {
+h2,
+h3 {
   font-family: $primaryFont;
 }
 
@@ -70,6 +72,7 @@ p {
 
 h1, 
 h2, 
+h3,
 p, 
 ul, 
 figure, 
@@ -110,6 +113,7 @@ ul li {
 fieldset {
   border: none;
 }
+
 // Button mixin //
 @mixin button($paddingLeft, $paddingRight) {
   font-family: $primaryFont;

@@ -36,7 +36,7 @@
     <div class="topBlogHeaderBar">
       <div class="wrapper topHeaderBar">
         <input type="checkbox" id="responsiveNav" name="responsiveNav">
-        <label for="responsiveNav">
+        <label for="responsiveNav" aria-label="Menu navigation">
           <!-- SVG Code from Asaf Gerchak, thank you! -->
           <svg class="hamburger" id="hamburger" viewBox="0 0 512 512" enable-background="new 0 0 512 512">
             <g>
@@ -67,8 +67,8 @@
       </div>
     </div>
   </header>
-  <main id="mainContentBlog" class="blogMainFlexContainer">
-    <div class="blogContainer">
+  <main id="mainContentBlog" class="blogMainFlexContainer responsiveXL">
+    <article class="blogContainer">
       <div class="blogImg">
         <img src="assets/postImage.jpg" alt="Green leaves of a healthy plant.">
       </div>
@@ -76,22 +76,10 @@
         <div class="blogCopy">
           <h2>Our mission at Planted</h2>
           <p><span class="emphasis">Monday January 21th, 2019 by</span> <span class="bold">Youstra</span></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia expedita dolorem fuga beatae ex quod
-            aspernatur vero, omnis corporis neque, magni quam quibusdam sapiente? Modi dolor voluptatibus iste ratione!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illum maxime adipisci exercitationem nemo incidunt
-            consequatur minus id! Dolores perferendis nostrum natus voluptas vel officiis, iste optio odit officia. Nesciunt
-            minima explicabo molestias eveniet cumque praesentium perspiciatis nulla soluta consequatur?</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam labore, sit pariatur enim reprehenderit animi
-            distinctio ipsam perferendis illum deserunt fugiat maiores veniam nisi molestiae dignissimos quibusdam nesciunt
-            sapiente doloribus culpa corporis dicta. Quaerat, maiores. Veniam in, quae, eum, alias debitis iusto voluptatem
-            quibusdam repellat non pariatur dignissimos magni ad laborum odio quas fugit. Dolor numquam qui dignissimos
-            quibusdam
-            praesentium autem nihil sapiente minus aperiam, laboriosam alias. Sit, vero quas! Repudiandae quia dolor
-            repellendus
-            labore ea distinctio voluptas voluptate excepturi?</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat earum ut laboriosam maiores, repudiandae
-            accusamus
-            odio cum quia nulla blanditiis, libero eaque, vel qui voluptatum labore rem et natus quisquam.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia expedita dolorem fuga beatae ex quod aspernatur vero, omnis corporis neque, magni quam quibusdam sapiente? Modi dolor voluptatibus iste ratione!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illum maxime adipisci exercitationem nemo incidunt consequatur minus id! Dolores perferendis nostrum natus voluptas vel officiis, iste optio odit officia. Nesciunt minima explicabo molestias eveniet cumque praesentium perspiciatis nulla soluta consequatur?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam labore, sit pariatur enim reprehenderit animi distinctio ipsam perferendis illum deserunt fugiat maiores veniam nisi molestiae dignissimos quibusdam nesciunt sapiente doloribus culpa corporis dicta. Quaerat, maiores. Veniam in, quae, eum, alias debitis iusto voluptatem quibusdam repellat non pariatur dignissimos magni ad laborum odio quas fugit. Dolor numquam qui dignissimos quibusdam praesentium autem nihil sapiente minus aperiam, laboriosam alias. Sit, vero quas! Repudiandae quia dolor repellendus labore ea distinctio voluptas voluptate excepturi?</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat earum ut laboriosam maiores, repudiandae accusamus odio cum quia nulla blanditiis, libero eaque, vel qui voluptatum labore rem et natus quisquam.</p>
         </div>
       </section>
       <section class="blogComments">
@@ -101,7 +89,7 @@
             <img src="assets/profileImage.jpg" alt="Blog commenter, Jeremy">
           </div>
           <div class="blogCommentCopy">
-            <h3>Tuesday October 9th, 2018 by Jeremy</h3>
+            <h3>Tuesday <time datetime="2018-10-09">October 9th, 2018</time> by Jeremy</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quas ipsum tempora facilis, incidunt fuga eius
               dolor, voluptatum, placeat earum laudantium dolorum eum harum aut saepe aspernatur? Eaque, saepe cum!</p>
           </div>
@@ -111,7 +99,7 @@
             <img src="assets/profileImageTwo.jpg" alt="Blog commenter, Julia">
           </div>
           <div class="blogCommentCopy">
-            <h3>Wednesday October 10th, 2018 by Julia</h3>
+            <h3>Wednesday <time datetime="2018-10-10">October 10th, 2018</time> by Julia</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio aperiam quisquam iste? Veritatis dolore
               expedita dicta voluptatum obcaecati provident, neque praesentium?</p>
           </div>
@@ -121,17 +109,18 @@
         <form action="#" method="POST" class="commentForm">
           <fieldset>
             <legend class="visibilityHidden">Submit a comment about our blog post</legend>
-            <label for="name" class="visibilityHidden">Name</label>
+            <label for="name" class="visibilityHidden">Your Name</label>
             <input type="text" name="name" id="name" placeholder="Name" class="formInput" required>
-            <label for="email" class="visibilityHidden">Email Address</label>
+            <label for="email" class="visibilityHidden">Your Email Address</label>
             <input type="email" name="email" id="email" placeholder="Email address" class="formInput" required>
-            <label for="comment" class="visibilityHidden">Comment</label>
+            <label for="comment" class="visibilityHidden">Your Comment</label>
             <textarea name="comment" id="comment" cols="25" rows="7" placeholder="Comment" maxlength="500" required"></textarea>
             <button type="submit" class="submitButton">Post Comment</button>
           </fieldset>
         </form>
       </section>
-    </div>
+    </article>
+    <!-- Used an aside tag as it's related to the article content but secondary to it. -->
     <aside>
       <div class="asideImg">
         <img src="assets/sideBarImage.jpg" alt="Gracefully aged hertiage building wall with a wood framed window">
@@ -139,16 +128,14 @@
       <div class="asideCopy">
         <h2>About Planted</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa exercitationem quasi perferendis! <a href="#aboutPlanted">Find out more.</a></p>
-        <div>
-          <h3>Recent Posts</h3>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor sit.</a></li>
-            <li><a href="#">Lorem ipsum dolor sit.</a></li>
-            <li><a href="#">Lorem ipsum dolor sit.</a></li>
-            <li><a href="#">Lorem ipsum dolor sit.</a></li>
-            </ul>
-          </div>
-        </div>
+        <h3>Recent Posts</h3>
+        <ul>
+          <li><a href="#">Lorem ipsum dolor sit.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit.</a></li>
+        </ul>  
+      </div>
     </aside>
   </main>    
   <footer>

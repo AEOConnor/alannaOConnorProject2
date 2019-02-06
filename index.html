@@ -37,8 +37,8 @@
     <!-- <div class="topHeaderBar"> -->
       <div class="wrapper topHeaderBar">
         <input type="checkbox" id="responsiveNav" name="responsiveNav">
-        <label for="responsiveNav">
-          <!-- SVG Code from Asaf Gerchak, thank you! -->
+        <label for="responsiveNav" aria-label="Menu navigation">
+          <!-- SVG code based on Asaf Gerchak's cool CodePen, thank you! -->
           <svg class="hamburger" id="hamburger" viewBox="0 0 512 512" enable-background="new 0 0 512 512">
             <g>
               <rect x="96" y="152" width="350" height="25" />
@@ -60,12 +60,10 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-        </div>
-      <!-- </div> -->
+      </div>
       <div class="mainHeader">
         <h1>Planted <span class="logoInvitation">invitation</span></h1>
       </div>
-
       <div class=headerBox>
         <img src="assets/headerBox.jpg" alt="Lush dark green plant leaves.">
       </div>
@@ -81,35 +79,32 @@
       </div>
     </section>
     <section class="mainEvents responsiveXL">
-      <!-- <div class="wrapper"> -->
-        <div class="eventsOne flexContainer">
-          <div class="eventsOneImg flexItem">
+        <div class="eventsOne">
+          <div class="eventsOneImg eventsHalf">
             <img src="assets/leftFlowers.jpg" alt="Beautiful bouquet of flowers, including pink and white roses.">
           </div>
-          <div class="eventsOneCopy flexItem">
+          <div class="eventsOneCopy eventsHalf">
             <h2>Upcoming workshops</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ut veritatis magnam dolores qui
               necessitatibus, in esse velit iure cum similique nam, cumque dolorum ullam?</p>
             <a href="#upcomingWorkshops" class="readMoreButton">Read More</a>
           </div>
         </div>
-        <div class="eventsTwo flexContainer">
-          <div class="eventsTwoImg flexItem">
+        <div class="eventsTwo">
+          <div class="eventsTwoImg eventsHalf">
             <img src="assets/rightFlowers.jpg" alt="Lush green leafy plants in a garden">
           </div>
-          <div class="eventsTwoCopy flexItem">
+          <div class="eventsTwoCopy eventsHalf">
             <h2>Unique plants to discover</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quisquam ducimus odio distinctio repellat!
               Consequuntur ratione cumque eaque quas corrupti explicabo quasi, optio facere ipsum?</p>
             <a href="#UniquePlantsToDiscover" class="readMoreButton">Read More</a>
           </div>
         </div>
-      <!-- </div>  -->
     </section>
     <section class="mainLearnMore">
       <div class="wrapper">
         <div class="mainLearnMoreContent">
-          <!-- Green houses -->
           <div class="learnMoreBox">
             <a href="#">
               <i class="fas fa-leaf" aria-hidden="true"></i>
@@ -117,7 +112,6 @@
             </a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quisquam at omnis porro ipsa nesciunt sint reprehenderit quas. Adipisci, culpa.</p>
           </div>
-          <!-- Community -->
           <div class="learnMoreBox">
             <a href="#" aria-label="Go to our community page.">
               <i class="fas fa-users" aria-hidden="true"></i>
@@ -125,7 +119,6 @@
             </a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quisquam at omnis porro ipsa nesciunt sint reprehenderit quas. Adipisci, culpa.</p>
           </div>
-          <!-- Blog -->
           <div class="learnMoreBox">
             <a href="blog.html">
               <i class="fas fa-file" aria-hidden="true"></i>
@@ -133,17 +126,17 @@
             </a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quisquam at omnis porro ipsa nesciunt sint reprehenderit quas. Adipisci, culpa.</p>
           </div>
-          <!-- Get in touch -->
           <div class="learnMoreBox">
             <a href="contact.html">
               <i class="fas fa-phone" aria-hidden="true"></i>
               <h2>Get in Touch</h2>
             </a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quisquam at omnis porro ipsa nesciunt sint reprehenderit quas. Adipisci, culpa.</p>
-        </div>
+          </div>
       </div>
     </section>
     <section class="mainAbout" id="about">
+      <!-- Following div is to hold the section background image -->
       <div class="sectionBanner"></div>
       <div class="wrapper">
         <div class="mainAboutContent">
@@ -158,41 +151,40 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="instagramGallery">
+        <div class="wrapper">
+          <ul>
+            <li>
+              <a href="#instagram/thisPhoto">
+                <img src="assets/galleryImageOne.jpg" alt="Gorgeous greenhouse garden filled with lush fauna.">
+                <div class="overlay">
+                  <p>See more</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#instagram/thisPhoto">
+                <img src="assets/galleryImageTwo.jpg" alt="Six different potted green cacti are arranged together on a white table.">
+                <div class="overlay">
+                  <p>See more</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#instagram/thisPhoto">
+                <img src="assets/galleryImageThree.jpg" alt="Dozens of potted cacti of varying colours, including green and pink, are arranged together on a window display.">
+                <div class="overlay">
+                  <p>See more</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
   <!-- Main ends -->
-  <!-- Aside begins -->
-  <aside>
-    <div class="instagramGallery">
-      <div class="wrapper">
-        <ul>
-          <li>
-            <a href="#instagram/thisPhoto">
-              <img src="assets/galleryImageOne.jpg" alt="Gorgeous greenhouse garden filled with lush fauna.">
-              <div class="overlay">
-                <p>See more</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#instagram/thisPhoto">
-              <img src="assets/galleryImageTwo.jpg" alt="Six different potted green cacti are arranged together on a white table.">
-              <div class="overlay">
-                <p>See more</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#instagram/thisPhoto">
-              <img src="assets/galleryImageThree.jpg" alt="Dozens of potted cacti of varying colours, including green and pink, are arranged together on a window display.">
-              <div class="overlay">
-                <p>See more</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </aside>
   <footer>
     <p>Copyright &copy; 2019 HackerYou</p>
   </footer>

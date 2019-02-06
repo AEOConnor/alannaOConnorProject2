@@ -42,6 +42,7 @@ label > svg {
   position: fixed;
   top: -5px;
   right: 20px;
+  background: transparentize($color: $primaryColor3, $amount: .5);
 }
 
 svg g {

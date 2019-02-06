@@ -6,9 +6,10 @@
   background: url("../assets/blogHeaderOne.jpg") no-repeat;
   background-size: cover;
   min-height: 70vh;
+  background-position: center center;
     h1 {
       @include fontStyle(80, $primaryColor1, 600);
       line-height: 92px;
-      padding-top: calc(55vh - 83px);
+      padding-top: calc(40vh - 83px);
     }
 }

@@ -1,5 +1,7 @@
+//MEDIA QUERIES FOR 500PX - 750PX//
+
 @media (max-width: 750px) {
-  //index//
+  //index styles//
   .mainHeader h1 {
     font-size: 6.3rem;
     line-height: 105px;
@@ -30,8 +32,7 @@
     text-align: center;
   }
 
-  //blog//
-
+  //blog styles//
   .blogContent {
     padding-top: 130px;
   }
@@ -40,18 +41,27 @@
     padding-bottom: 0;
   }
 
-  .asideCopy h2 {
-    font-size: 1.3rem;
+  .asideCopy {
+    padding: 10px 30px;
   }
 
-  .asideCopy ul li:nth-child(3),
-  .asideCopy ul li:last-child {
-    display: none;
+  .asideCopy p,
+  .asideCopy ul a {
+    font-size: .9rem;
   }
 
-  //contact//
+  .asideCopy h2,
+  .asideCopy h3 {
+    font-size: 1.2rem;
+  }
+
+  .asideCopy h3 {
+    padding: 5px 0;
+  }
+
+  //contact styles//
   .contactHeader h1 {
-    width: 100%;
+    width: 50%;
   }
 
   .contactMain {
@@ -84,7 +94,7 @@
 }
 
 @media (max-width: 650px) {
-  //main//
+  //index styles//
   .mainHeader h1 {
     font-size: 5.3rem;
     line-height: 95px;
@@ -95,8 +105,6 @@
     flex-direction: row-reverse;
   }
 
-
-  
   .topHeaderBar label  {
     z-index: 1000;
   }
@@ -105,10 +113,7 @@
     display: block;
   }
 
-  .logo {
-    display: none;
-  }
-
+  .logo,
   .topHeaderBar nav ul {
     display: none;
   }
@@ -128,22 +133,20 @@
     position: fixed;
   }
 
+  #responsiveNav:focus ~ label svg {
+    border: 1px solid $primaryColor1;
+  }
 
-  #responsiveNav:checked ~ label > svg g:nth-of-type(2)  {
+  #responsiveNav:checked ~ label > svg g:nth-of-type(2) {
     opacity: 0;
   }
 
   #responsiveNav:checked ~ label > svg g:nth-of-type(1) {
     transform: rotate(45deg) translate(100px, -155px);
-
   }
 
   #responsiveNav:checked ~ label > svg g:nth-of-type(3) {
     transform: rotate(-45deg) translate(-280px, 10px);
-  }
-
-  #responsiveNav:checked  ~ .mainHeader {
-    padding-top: 120px;
   }
 
   .mainOverview,
@@ -151,11 +154,12 @@
     padding: 60px 0;
   }
 
-  .mainEvents .flexContainer {
+  .mainEvents .eventsOne,
+  .mainEvents .eventsTwo {
     display: block;
   }
 
-  .mainEvents .flexItem {
+  .mainEvents .eventsHalf{
     max-width: 100%;
     padding: 5%;
     text-align: center;
@@ -163,31 +167,28 @@
 
   .mainLearnMore {
     padding: 20px;
-    background: $primaryColor3;
-      h2 {
-        color: #fff;
-        font-weight: 400;
+  }
+
+  .mainLearnMoreContent  {
+    flex-direction: column;
+    align-content: center;
+      .learnMoreBox {
+        width: 75%;
       }
   }
 
-  .learnMoreBox p {
-    display: none;
-  }
-
   .sectionBanner {
-    display: none;
+    height: 40vh;
   }
 
   .instagramGallery ul li {
     width: 50%;
+      &:last-child {
+        display: none;
+      }
   }
 
-  .instagramGallery ul li:last-child {
-    display: none;
-  }
-
-  //blog//
-
+  //blog styles//
   .blogContent {
     padding-top: 60px;
   }
@@ -201,49 +202,43 @@
     box-shadow: none;
     padding: 50px;
   }
+
   .blogCommentsForm {
     padding: 0 0 20px 0;
   }
 }
 
 @media (max-width: 550px) {
-  //main//
+  //index styles//
   .mainHeader h1 {
     font-size: 4.3rem;
     line-height: 70px;
     padding-top: 140px;
   }
 
-  .mainLearnMore h2 {
-    font-size: 1rem;
-  }
-
-  //blog//  
-  .blogMainFlexContainer aside {
-   display: none;
-  }
-
+  //blog styles//  
   .blogImg {
-    top: -240px;
+    top: -215px;
   }
 }
 
 @media (max-width: 500px) {
+  //index styles// 
+  .mainLearnMoreContent {
+    flex-direction: column;
+    align-content: center;
+      .learnMoreBox {
+        width: 100%;
+      } p {
+          margin: 0;
+          text-align: center;
+      }
+  }
 
-  //main// {
-    .mainLearnMoreContent {
-      flex-direction: column;
-      align-content: center;
-        .learnMoreBox {
-          width: 100%;
-        }
-    }
 
-    .mainLearnMoreContent a
-
-  //blog//
+  //blog styles//
   .blogContent {
-    padding-top: 15px;
+    padding-top: 10px;
     margin-right: 0;
   }
 
@@ -256,12 +251,26 @@
       }
   }
 
-  //contact//
-  .contactMainFlexContainer .ourContactInfo {
+  //contact styles//
+  .contactMain {
+    padding: 30px 0;
+  }
+  
+  .contactMainFlexContainer .ourContactInfo,
+  .mainLearnMoreContent a {
     flex-direction: column;
     align-items: center;
       .socialMediaLinks {
         padding: 0;
       }
+  }
+
+  .contactMainFlexContainer .ourContactInfo .contactDetails {
+    text-align: center;
+    width: 100%;
+  }
+
+  .learnMoreBox .fas {
+    margin: 0;
   }
 }

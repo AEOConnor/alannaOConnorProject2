@@ -1,9 +1,10 @@
 .mainEvents {
   background: #fff;
-    .flexContainer {
+    .eventsOne, 
+    .eventsTwo {
       display: flex;
       justify-content: space-between;
-    }   .flexItem {
+    }  .eventsHalf {
           max-width: 50%;
     }
 } 
@@ -17,12 +18,10 @@
 }
 
 .eventsOneCopy {
-  // border: 1px solid green;
   padding: 8% 5% 2% 4%;
 }
 
 .eventsTwoCopy {
-  // border: 1px solid green;
   padding: 5% 4% 2% 5%;
   text-align: right;
 }
@@ -33,12 +32,12 @@
   box-shadow: 20px 20px 0 -5px $primaryColor1;
 }
 
-.eventsTwo {
-  flex-direction: row-reverse;
-}
-
 .eventsTwoImg img {
   position: relative;
   bottom: -15%;
   box-shadow: -20px 20px 0 -5px $primaryColor1;
+}
+
+.eventsTwo {
+  flex-direction: row-reverse;
 }

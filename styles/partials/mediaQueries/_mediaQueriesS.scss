@@ -1,0 +1,136 @@
+//MEDIA QUERIES FOR 330PX - 450PX//
+
+@media (max-width: 450px) {
+  //index styles//
+  .mainHeader h1 {
+    font-size: 4rem;
+  }
+
+  .mainOverview,
+  .mainAboutContent,
+  .instagramGallery {
+    padding: 50px 0;
+  }
+
+  .mainOverview h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: .9rem;
+  }
+
+  //blog styles// 
+  .blogContent {
+    padding-top: 0;
+    margin-right: 5px;
+  }
+
+  .blogCommentOne, 
+  .blogCommentTwo {
+    flex-direction: column;
+  }
+
+  .blogCommentImg {
+    padding-bottom: 20px;
+      img {
+        box-shadow: 10px 10px 0 0 $primaryColor1;
+      }
+  }
+
+  .blogComments h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .blogCommentCopy h3 {
+    font-size: .9rem;
+  }
+
+  .blogCommentCopy p {
+    font-size: .8rem;
+    line-height: 25px;
+  }
+
+  //content styles// 
+  .contactMain {
+    padding-bottom: 0px;
+      .wrapper {
+        width: 100%;
+      } 
+  }
+
+  .contactHeader h1 {
+    width: 100%;
+  }
+  
+  .contactUsForm {
+    box-shadow: 20px 25px 0 -6px #f8e71c;
+  }
+  
+  .formInput,
+  textarea {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  //index styles//
+  .mainHeader h1 {
+    width: 80%;
+  }
+
+  .mainHeader h1,
+  .blogHeader h1,
+  .contactHeader h1 {
+    font-size: 3.5rem;
+  }
+
+  .mainOverview h2 {
+    font-size: 2.3rem;
+  }
+
+  //blog styles// 
+  .blogContent {
+    padding: 20px 30px 35px 30px ;
+  }
+
+  .blogContent::before {
+    height: 50px;
+  }
+
+  .blogCopy h2 {
+    font-size: 1.3rem;
+  }
+
+  .blogCopy h2 + p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 380px) {
+  //blog styles//
+  .blogContent {
+    padding: 50px 30px 35px 30px ;
+  }
+
+  .blogImg {
+    top: -180px;
+  }
+
+  fieldset {
+    margin: 0;
+    padding: 1px;
+  }
+}
+
+@media (max-width: 330px) {
+  //index styles//
+  .mainHeader h1, 
+  .blogHeader h1,
+  .contactHeader h1 {
+    font-size: 3rem;
+  }
+}
