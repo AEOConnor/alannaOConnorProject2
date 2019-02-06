@@ -33,9 +33,6 @@
    margin: 0 auto;
 }
 
-html {
-  font-size: 125%;
-}
 
 // Styleguide colour variables // 
 $primaryColor1: #f8e71c; 
@@ -44,6 +41,11 @@ $primaryColor3: #2c2c2c;
 $secondaryColor1: #074115;
 $secondaryColor2: #4f4f4f;
 $secondaryColor3: #f0efed;
+
+html {
+  font-size: 125%;
+  background: $secondaryColor3;
+}
 
 // Styleguide font variables //
 $primaryFont: "Josefin Sans", Verdana, Arial, sans-serif;

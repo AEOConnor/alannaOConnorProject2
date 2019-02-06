@@ -1,28 +1,5 @@
 
-//MEDIA QUERIES 800PX - 5000PX//
-
-// The first two media queries for x-large screens, the class is used to restrain the main events section on the index and the main content on the blog//
-
-@media (min-width: 1700px) and (max-width: 5000px) {
-
-  .responsiveXL {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .headerBox {
-    display: none;
-  }
-}
-
-@media (max-width: 1440px) {
-
-  .responsiveXL {
-    max-width: 100%;
-    width: 100%;
-  }
-}
+//MEDIA QUERIES 800PX - 1300PX//
 
 @media (max-width: 1300px) {
   // index styles//
@@ -114,6 +91,11 @@
 }
 
 @media (max-width: 900px) {
+  //index styles//
+  .mainHeader h1 {
+    font-size: 7.3rem;
+  }
+  
   //blog styles// 
   .blogHeader h1 {
     padding-top: calc(55vh - 200px);
@@ -200,10 +182,6 @@
 
 @media (max-width: 800px) {
   //index styles//
-  .mainHeader h1 {
-    font-size: 7.3rem;
-  }
-
   .headerBox {
     display: none;
   }

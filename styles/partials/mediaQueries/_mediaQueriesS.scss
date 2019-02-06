@@ -127,10 +127,15 @@
 }
 
 @media (max-width: 330px) {
-  //index styles//
+  //h1 styles for all three pages//
   .mainHeader h1, 
   .blogHeader h1,
   .contactHeader h1 {
     font-size: 3rem;
+  }
+
+  //blog styles//
+  .blogImg {
+    top: -150px;
   }
 }

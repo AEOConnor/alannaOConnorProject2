@@ -1,12 +1,12 @@
-main {
-  background: $secondaryColor3;
-}
-
 .blogMainFlexContainer {
   display: flex;
   flex-direction: row-reverse;
   padding: 135px 0 40px 0;
   color: $primaryColor3;
+  background: $secondaryColor3;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
     .blogContainer {
       width: calc(65% - 90px);
       margin-left: 90px;

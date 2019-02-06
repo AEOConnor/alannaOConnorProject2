@@ -163,7 +163,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0 auto; }
 
 html {
-  font-size: 125%; }
+  font-size: 125%;
+  background: #f0efed; }
 
 h1,
 h2,
@@ -361,6 +362,7 @@ svg g {
     color: #f8e71c; }
 
 .headerBox {
+  max-width: 45%;
   width: 45%;
   z-index: 10;
   position: absolute;
@@ -395,15 +397,18 @@ svg g {
   .mainEvents .eventsHalf {
     max-width: 50%; }
 
-.mainEvents h2 {
-  font-size: 32px;
-  font-size: 1.6rem;
-  font-size: 32;
-  color: #2c2c2c;
-  font-weight: 600; }
-
-.mainEvents p {
-  padding: 25px 0; }
+.mainEvents {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto; }
+  .mainEvents h2 {
+    font-size: 32px;
+    font-size: 1.6rem;
+    font-size: 32;
+    color: #2c2c2c;
+    font-weight: 600; }
+  .mainEvents p {
+    padding: 25px 0; }
 
 .eventsOneCopy {
   padding: 8% 5% 2% 4%; }
@@ -441,6 +446,11 @@ svg g {
     font-weight: 600;
     line-height: 50px; }
 
+.mainEvents {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto; }
+
 .mainLearnMoreContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -462,7 +472,7 @@ svg g {
   height: 40px;
   margin-right: 20px;
   position: relative;
-  background: #primaryColor1;
+  background: #f8e71c;
   border-radius: 50%;
   padding: 8px; }
 
@@ -506,7 +516,8 @@ svg g {
     padding: 25px 0; }
 
 .instagramGallery {
-  padding: 100px 0; }
+  padding: 100px 0;
+  background: #fff; }
   .instagramGallery ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -570,9 +581,6 @@ footer {
     line-height: 92px;
     padding-top: calc(40vh - 83px); }
 
-main {
-  background: #f0efed; }
-
 .blogMainFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -582,7 +590,11 @@ main {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   padding: 135px 0 40px 0;
-  color: #2c2c2c; }
+  color: #2c2c2c;
+  background: #f0efed;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto; }
   .blogMainFlexContainer .blogContainer {
     width: calc(65% - 90px);
     margin-left: 90px;
@@ -848,19 +860,6 @@ textarea:active {
 .contactUsForm textarea:focus {
   background: #f0efed; }
 
-@media (min-width: 1700px) and (max-width: 5000px) {
-  .responsiveXL {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto; }
-  .headerBox {
-    display: none; } }
-
-@media (max-width: 1440px) {
-  .responsiveXL {
-    max-width: 100%;
-    width: 100%; } }
-
 @media (max-width: 1300px) {
   .headerBox {
     bottom: -7%; }
@@ -909,6 +908,8 @@ textarea:active {
     margin-right: 20px; } }
 
 @media (max-width: 900px) {
+  .mainHeader h1 {
+    font-size: 7.3rem; }
   .blogHeader h1 {
     padding-top: calc(55vh - 200px); }
   .blogImg {
@@ -969,8 +970,6 @@ textarea:active {
     right: -35px; } }
 
 @media (max-width: 800px) {
-  .mainHeader h1 {
-    font-size: 7.3rem; }
   .headerBox {
     display: none; }
   .mainOverview {
@@ -1115,7 +1114,8 @@ textarea:active {
     -ms-flex-line-pack: center;
     align-content: center; }
     .mainLearnMoreContent .learnMoreBox {
-      width: 75%; }
+      width: 100%;
+      padding: 15px 0; }
   .sectionBanner {
     height: 40vh; }
   .instagramGallery ul li {
@@ -1263,6 +1263,8 @@ textarea:active {
   .mainHeader h1,
   .blogHeader h1,
   .contactHeader h1 {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .blogImg {
+    top: -150px; } }
 
 /*# sourceMappingURL=style.css.map */
