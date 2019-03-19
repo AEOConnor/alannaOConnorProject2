@@ -2,35 +2,35 @@
 
 // Skip link and visibility hidden code snippets from HackerYou//
 .skipLink {
-    position: absolute;
-    left: -1000px;
-    top: 5px;
-    z-index: 999;
-    background:#fff;
-    color: #000;
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background:#fff;
+  color: #000;
 }
 
 .skipLink:focus {
-    left: 10px;
+  left: 10px;
 }
 
 .visibilityHidden:not(:focus):not(:active) {
-     position: absolute;
-     width: 1px;
-     height: 1px;
-     margin: -1px;
-     border: 0;
-     padding: 0;
-     white-space: nowrap;
-     clip-path: inset(100%);
-     clip: rect(0 0 0 0);
-     overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .wrapper {
-   max-width: 1200px;
-   width: 90%;
-   margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 
@@ -89,6 +89,7 @@ img {
   width: 100%;
 	display: block;
 }
+
 
 a {
   text-decoration: none;

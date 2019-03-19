@@ -9,8 +9,10 @@
     .ourContactInfo {
       width: calc(40% - 40px);
       margin-right: 40px;
-    } .contactUsForm {
-        width: 60%;
+    } 
+
+    .contactUsForm {
+      width: 60%;
     }
 }
 
@@ -20,7 +22,9 @@
   padding-bottom: 15px;
     li {
       margin: 5px;
-    } a {
+    } 
+    
+    a {
       padding: 5px 2px;
       transition: all .4s ease-in-out;
     }  
@@ -62,9 +66,11 @@
 .contactDetails a {
   font-family: $secondaryFont;
 }
+
 .postalCode {
   display: block;
 }
+
 .contactUsForm {
   background: #fff;
   position: relative;

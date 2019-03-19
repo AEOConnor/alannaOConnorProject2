@@ -3,10 +3,12 @@
   background: #fff;
     ul {
       display: flex;
-    } li {
-        width: calc(33.33% - 10px);
-        margin: 0 10px;
-        position: relative;
+    } 
+    
+    li {
+      width: calc(33.33% - 10px);
+      margin: 0 10px;
+      position: relative;
     }
 } 
 

@@ -4,6 +4,7 @@
     h2 {
       @include fontStyle(36, $primaryColor3, 600);
       line-height: 50px;
+      transition: all .3s ease-in-out;
     } 
 }
 
@@ -19,10 +20,17 @@
     .learnMoreBox {
       width: 50%;
       padding: 20px 0;
-    }  a {
-        display: flex;
-        align-items: center;
+    }  
+    
+    a {  
+      display: flex;
+      align-items: center;
     }
+}
+
+.learnMoreBox a h2:hover,
+.learnMoreBox a h2:focus {
+  color: $primaryColor2;
 }
 
 .learnMoreBox .fas {

@@ -446,7 +446,10 @@ svg g {
     font-size: 36;
     color: #2c2c2c;
     font-weight: 600;
-    line-height: 50px; }
+    line-height: 50px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
 
 .mainEvents {
   width: 100%;
@@ -469,6 +472,10 @@ svg g {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+
+.learnMoreBox a h2:hover,
+.learnMoreBox a h2:focus {
+  color: #0e902d; }
 
 .learnMoreBox .fas {
   width: 40px;

@@ -13,7 +13,9 @@
       display: flex;
       flex-direction: column;
       position: relative;
-    } aside {
+    } 
+    
+    aside {
       width: 35%;
     }
 }
@@ -59,8 +61,10 @@
   color: $secondaryColor1;
     .bold {
       font-weight: 600;
-    } .emphasis {
-        font-style: italic;
+    } 
+    
+    .emphasis {
+      font-style: italic;
     }
 } 
 

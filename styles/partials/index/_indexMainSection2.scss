@@ -4,8 +4,9 @@
     .eventsTwo {
       display: flex;
       justify-content: space-between;
-    }  .eventsHalf {
-          max-width: 50%;
+    } 
+    .eventsHalf {
+      max-width: 50%;
     }
 } 
 
@@ -15,8 +16,10 @@
   margin: 0 auto;
     h2 {
       @include fontStyle(32, $primaryColor3, 600);
-    } p {
-        padding: 25px 0;
+    } 
+    
+    p {
+      padding: 25px 0;
     }
 }
 

@@ -1,5 +1,4 @@
 //MEDIA QUERIES FOR 500PX - 750PX//
-
 @media (max-width: 750px) {
   //index styles//
   .mainHeader h1 {
@@ -234,9 +233,11 @@
     align-content: center;
       .learnMoreBox {
         width: 100%;
-      } p {
-          margin: 0;
-          text-align: center;
+      } 
+      
+      p {
+        margin: 0;
+        text-align: center;
       }
   }
 
@@ -251,7 +252,9 @@
     padding: 10px;
       h3 {
         font-size: 1rem;
-      } p {
+      } 
+      
+      p {
         font-size: .9rem;
       }
   }
